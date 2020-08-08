@@ -86,7 +86,7 @@ const Cropper: React.FC<CropperProps> = props => {
       <Animated.View style={[styles.animation, styles.topRightAnimation, props.getTopRightStyle()]} {...props.topRightPanResponder.panHandlers} />
 
       <Animated.View style={[styles.animation, props.getRectangleStyle()]} {...props.rectanglePanResponder.panHandlers}>
-        <View style={styles.gridRow}>
+        <View style={[styles.gridRow, {borderTopWidth: 1, borderColor: 'rgba(255, 255, 255, 0.5)'}]}>
           <View style={styles.gridColumn}>
             <View style={[styles.borderDesign, { borderLeftWidth: 3, borderTopWidth: 3 }]} />
           </View>
@@ -108,7 +108,7 @@ const Cropper: React.FC<CropperProps> = props => {
           </View>
         </View>
 
-        <View style={styles.gridRow}>
+        <View style={[styles.gridRow, {borderColor: 'rgba(255, 255, 255, 0.5)', borderBottomWidth: 1}]}>
           <View style={[styles.gridColumn, { justifyContent: 'flex-end' }]}>
             <View style={[styles.borderDesign, { borderLeftWidth: 3, borderBottomWidth: 3 }]} />
           </View>
