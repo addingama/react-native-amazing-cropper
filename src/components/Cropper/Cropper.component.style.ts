@@ -26,10 +26,13 @@ export default function getStyles(COMPONENT_WIDTH: number, COMPONENT_HEIGHT: num
     gridRow: {
       flex: 1,
       flexDirection: 'row',
+      borderLeftWidth: 1,
+      borderRightWidth: 1,
+      borderColor: 'rgba(255, 255, 255, 0.5)',
     },
     gridColumn: {
       flex: 1,
-      borderWidth: 1,
+      borderWidth: 0,
       borderColor: 'rgba(255, 255, 255, 0.5)',
     },
     animation: {
